@@ -1,32 +1,34 @@
-li {
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-left {
+}
+
+#list > li {
+  cursor: pointer;
   padding: 10px;
-  margin: 5px;
+  margin: 0 auto;
+  margin-bottom: 5px;
   width: 200px;
   text-align: center;
   list-style-type: none;
-  border: 1px solid red;
-  background-color: black;
-  color: white;
-}
-textarea {
-    display:block;
-    width:700px;
-    height:400px;/*Длина:400px*/
-    margin:0 auto;
-    resize:vertical;
-    outline:none;/*Светящаяся рамка:убераем*/
-    border-width:2px;/*Ширина рамки:2px*/
-    border-radius:2px;/*Скругление углов:2px*/
-    font-size:18pt;/*Размер шрифта:18pt*/
-    text-align:center;/*Положение текста:по центру*/
-    background:#ecf0f1;
-    color:rgb(52, 73, 94);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #ecf0f1;
+  color: rgb(52, 73, 94);
+  transition: all 0.218s ease 0s;
 }
 
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 button {
-  display: inline-block;
   font-family: arial, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(68, 68, 68);
   text-decoration: none;
@@ -34,9 +36,12 @@ button {
   padding: 0.2em 1.2em;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  border-radius: 5px;
   background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
   transition: all 0.218s ease 0s;
+  width: 150px;
+  height: 30px;
+  text-align: center;
 }
 button:hover {
   color: rgb(24, 24, 24);
@@ -50,4 +55,26 @@ button:active {
   background: rgb(238, 238, 238)
     linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+#butt {
+  margin-top: 10px;
+}
+
+textarea {
+  display: block;
+  width: 600px;
+  height: 800px; /*Длина:400px*/
+  margin: 0 auto;
+  resize: vertical;
+  outline: none; /*Светящаяся рамка:убераем*/
+  border-width: 2px; /*Ширина рамки:2px*/
+  border-radius: 10px; /*Скругление углов:2px*/
+  font-size: 18px; /*Размер шрифта:18pt*/
+  background: #ecf0f1;
+  color: rgb(52, 73, 94);
+  padding: 10px;
+}
+body {
+  background-image: url(/Users/macos/Downloads/452895.jpg);
 }
