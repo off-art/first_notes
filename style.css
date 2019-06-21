@@ -64,7 +64,7 @@ button:active {
 textarea {
   display: block;
   width: 600px;
-  height: 800px; /*Длина:400px*/
+  height: 700px; /*Длина:400px*/
   margin: 0 auto;
   resize: vertical;
   outline: none; /*Светящаяся рамка:убераем*/
@@ -77,4 +77,11 @@ textarea {
 }
 body {
   background-image: url(/Users/macos/Downloads/452895.jpg);
+}
+h1 {
+  text-align: center;
+}
+h1,
+li {
+  font-family: "Noto Sans SC", sans-serif;
 }
