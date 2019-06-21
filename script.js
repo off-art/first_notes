@@ -48,3 +48,8 @@ function addZero(num) {
     return num;
   }
 }
+
+function removeElement()
+{
+   document.querySelector('li').remove();
+}

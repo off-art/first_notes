@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: flex-end;
 }
-button {
+#butt {
   font-family: arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -43,13 +43,13 @@ button {
   height: 30px;
   text-align: center;
 }
-button:hover {
+#butt:hover {
   color: rgb(24, 24, 24);
   border: 1px solid rgb(198, 198, 198);
   background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-button:active {
+#butt:active {
   color: rgb(51, 51, 51);
   border: 1px solid rgb(204, 204, 204);
   background: rgb(238, 238, 238)
@@ -63,8 +63,8 @@ button:active {
 
 textarea {
   display: block;
-  width: 600px;
-  height: 700px; /*Длина:400px*/
+  width: 1200px;
+  height: 600px; /*Длина:400px*/
   margin: 0 auto;
   resize: vertical;
   outline: none; /*Светящаяся рамка:убераем*/
@@ -84,4 +84,11 @@ h1 {
 h1,
 li {
   font-family: "Noto Sans SC", sans-serif;
+}
+
+#redBut{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 20px;
 }
