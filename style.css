@@ -1,33 +1,42 @@
+* {
+  font-family: "Noto Sans SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .wrap {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.container-left {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 #list > li {
   cursor: pointer;
-  padding: 10px;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  width: 200px;
+  padding: 5px;
+  margin-bottom: 8px;
+  min-width: 200px;
   text-align: center;
   list-style-type: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 5px;
   background: #ecf0f1;
   color: rgb(52, 73, 94);
-  transition: all 0.218s ease 0s;
+  transition: all .9s ease 0s;
 }
 
 .container-right {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
 }
 #butt {
-  font-family: arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: rgb(68, 68, 68);
@@ -40,7 +49,7 @@
   background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
   transition: all 0.218s ease 0s;
   width: 150px;
-  height: 30px;
+  height: 40px;
   text-align: center;
 }
 #butt:hover {
@@ -48,47 +57,23 @@
   border: 1px solid rgb(198, 198, 198);
   background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 #butt:active {
   color: rgb(51, 51, 51);
   border: 1px solid rgb(204, 204, 204);
-  background: rgb(238, 238, 238)
-    linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+  background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 }
 
-#butt {
-  margin-top: 10px;
-}
-
-textarea {
-  display: block;
-  width: 1200px;
-  height: 600px; /*Длина:400px*/
-  margin: 0 auto;
-  resize: vertical;
+input {
   outline: none; /*Светящаяся рамка:убераем*/
-  border-width: 2px; /*Ширина рамки:2px*/
-  border-radius: 10px; /*Скругление углов:2px*/
-  font-size: 18px; /*Размер шрифта:18pt*/
+  border: none; /*Ширина рамки:2px*/
+  border-radius: 5px; /*Скругление углов:2px*/
+  font-size: 14px; /*Размер шрифта:18pt*/
   background: #ecf0f1;
   color: rgb(52, 73, 94);
   padding: 10px;
-}
-body {
-  background-image: url(/Users/macos/Downloads/452895.jpg);
-}
-h1 {
-  text-align: center;
-}
-h1,
-li {
-  font-family: "Noto Sans SC", sans-serif;
+  margin-right: 10px;
 }
 
-#redBut{
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 20px;
-}

@@ -11,7 +11,7 @@ butt.addEventListener("click", function() {
     notes[key] = text.value;
     edit = false;
     key = undefined;
-    text.value = " ";
+    text.value = "";
   } else {
     let date = new Date();
     let now =
